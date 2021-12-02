@@ -1,0 +1,42 @@
+This lab consists of several parts so read this assignment carefully. 
+
+Lab 3a :: CPU Design Lab
+Lab 3a is the CPU Design Lab. This is the assignment to build a CPU using Logisim.  Submission for Lab 3a will not be enabled until at least next week and may be on Gradescope. This portion of this assignment is worth 200 of the 250 points total for this lab.
+
+Read this entire prompt thoroughly before downloading any of the provided files listed below. 
+
+Writeup
+For this portion of the lab you will submit a complete writeup of your CPU design. The first three sections of Chapter 7 give you a reasonable model for this writeup. Of course, you are not expected to write a book chapter, however, describing your development in stages including several snapshots of your CPU Datapath in progress as you develop the circuitry for each instruction will help to convey how you developed your CPU. Of course you must also include snapshots of each of your sub-modules with a brief circuit description. You should include assembler and machine language source for each of the test programs that you developed to test your CPU. Note, as mentioned in the design document, these are not large scale programs and some may just be a few lines of assembler code. So do not overthink this part. You will probably write ten to twenty of these tiny programs while testing your CPU. I recommend that you include these in your document close to the circuitry that they tested. Make sure that you include both assembler and machine language. If you are confused about the difference or what is expected then ask your TAs. At the moment, the example in the design document only includes assembler, I will update this to provide an example. 
+
+Schematic 
+You will also submit your .circ file for this project. You may not modify the pins of the provided base file in any way. In other words, your CPU cannot have any other inputs and outputs. Don't change their order within the CPU file either. Each pin has a tunnel attached to it so that you may make your connections to the pins via an identically named tunnel. If you have not used tunnels until now you will want to get cozy with them for this project. Most likely your CPU will not be autograded via script, however, the TAs will run your CPU so pay close attention to the following:
+You must use Logisim Evolution v2.15 and you may download the .jar file from here.
+
+If you use any other version of Logisim your project may not run and you will not receive any points for that portion of the assignment grade. If you have questions about running a .jar file then talk to the TAs. This .jar file will run on all major operating systems without problem. 
+
+
+More Advanced Test Programs
+Programs that you write: You will be required to write one slightly more advanced test program in assembler to be included in your writeup. Do not get stressed over this, this will still be a very simple program. Generally this program is on the order of twenty to thirty lines of assembler and will be some sort of simple and straightforward math program, e.g., compute n Fibonacci numbers. This program requirement will be specified and will be made available next week. 
+Programs that I write that you get to see: I will also provide several more advanced programs, in machine language only, for you to test your CPU with. These programs will have a specific output given specific inputs and will help you to verify that your CPU is working. Expect these over the Thanksgiving break.
+Programs that I write but you don't get to see: I will also provide the TAs with additional test programs that your CPU must pass for full points. You will not have access to these programs. You must test your own CPU thoroughly and this includes paying careful attention to writing small test programs on your own. If you do a thorough job, your CPU will run my test programs with ease. 
+
+Video Submission
+This assignment will also have a video submission component. Note, that this video only applies to the CPU Design portion of the lab. Part 3b, described below, has very simple submission requirements. In your video you will demonstrate the functioning of your CPU by running the slightly more advanced test program that you wrote, and the test programs that I provide. That is all. Your video submission is limited to a 2 minute length. You may not use your phone to record your screen. You must use screen capture software to submit a video of reasonable quality. I use OBS Studio, it is free, it is open source, and it works on all platforms. You must submit an MP4 file. Note, OBS will convert the default MKV files to MP4 by selecting File->Remux Recordings.
+
+Provided Files
+
+The following files are provided for Lab 3a
+
+Design Document
+Read this document carefully. Note that it will almost certainly be updated with clarifications and typo corrections early next week. Do not wait to get started, those changes will be minor and will not significantly impact your project! Because this is a somewhat long and complex document. All changes will be described in detail in an appendix within the document. I will only list a brief version summary here.
+
+Starter Schematic File
+This starter file includes the CPU submodule that you will use to create your CPU. It also includes a helpful front panel to assist your debugging efforts. Download this file and rename the file to Lab3bxxxx.circ, where xxxx is the last four of your student ID. 
+
+Revision History
+
+V002 :: Corrected typos, corrected EOR mnemonic, corrected 4 bit shift/rotate reference. Updated the register file description to include RD3 output for STR instruction.
+V001 :: Initial release
+
+
+Lab 3b :: Memory Lab
